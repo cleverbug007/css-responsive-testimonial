@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-weight: normal;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.7;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  margin: 5rem auto;
+  padding: 4rem;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 92%;
+  max-width: 120rem;
+  text-align: center;
+}
+
+.wrapper_header p:first-child {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper_header p:last-child {
+  font-size: 2rem;
+}
+
+.wrapper_images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  gap: 3rem;
+}
+
+.wrapper_images-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.wrapper_images-item img {
+  width: 20rem;
+  height: 20rem;
+  border: 3px solid #cc9d62;
+  border-radius: 12rem;
+  object-fit: cover;
+}
+
+.wrapper_images-item strong {
+  font-size: 1.8rem;
+}
+
+.wrapper_images-item p {
+  font-size: 1.8rem;
+}
+
+.wrapper button {
+  font-size: 2rem;
+  padding: 1.4rem 3.2rem;
+  border: 2px solid #cc9d62;
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.wrapper button:hover {
+  background-color: #000;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper_header {
+    display: none;
+  }
+
+  .wrapper_images {
+    flex-direction: column;
+  }
+}
